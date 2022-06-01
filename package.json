@@ -16,8 +16,5 @@
   "bugs": {
     "url": "https://github.com/grabsks/Teste-Take-Blip-API/issues"
   },
-  "homepage": "https://github.com/grabsks/Teste-Take-Blip-API#readme",
-  "dependencies": {
-    "json-server": "^0.17.0"
-  }
+  "homepage": "https://github.com/grabsks/Teste-Take-Blip-API#readme"
 }
