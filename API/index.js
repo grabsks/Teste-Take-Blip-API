@@ -26,10 +26,10 @@ app.get('/repositories', async (req, res) => {
 			header: {
 				type: "application/vnd.lime.media-link+json",
 				value: {
-						title: "element.full_name",
-						text: "element.description",
+						title: element.full_name,
+						text: element.description,
 						type: "image/jpeg",
-						uri: "element.owner.avatar_url"
+						uri: element.owner.avatar_url
 				}
 			}
 		};
