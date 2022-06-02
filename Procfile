@@ -1,1 +1,1 @@
-web: ./API npm start
+web: --chdir ./API npm start
