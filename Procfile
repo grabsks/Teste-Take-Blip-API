@@ -1,1 +1,1 @@
-web: --chdir ./API npm start
+web: cd API && npm start
