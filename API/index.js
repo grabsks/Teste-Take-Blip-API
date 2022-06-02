@@ -28,7 +28,7 @@ app.get('/repositories', async (req, res) => {
 				value: {
 						title: element.full_name,
 						text: element.description,
-						type: "image/jpeg",
+						type: "image/png",
 						uri: element.owner.avatar_url
 				}
 			}
