@@ -17,15 +17,21 @@ app.get('/repositories', async (req, res) => {
 	let response = await fetch(`${url}?q=${filters}&sort=${sort}&order=${order}&accept=${accept}`);
 	response = await response.json();
 
-	selectedRepositories['avatar'] = response.items[0].owner.avatar_url;
+	selectedRepositories['itemType'] = "application/vnd.lime.document-select+json";
 
 	for (let i = 0; i < 5; i++) {
 		const element = response.items[i];
 
 		filler[i] = {
-			id:element.id,
-			full_name:element.full_name,
-			description:element.description,
+			header: {
+				type: "application/vnd.lime.media-link+json",
+				value: {
+						title: "element.full_name",
+						text: "element.description",
+						type: "image/jpeg",
+						uri: "element.owner.avatar_url"
+				}
+			}
 		};
 	}
 
