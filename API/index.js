@@ -3,7 +3,7 @@ import fetch from "node-fetch";
 
 const app = express();
 
-app.get('/', async (req, res) => {
+app.get('/repositories', async (req, res) => {
 
 	const url ='https://api.github.com/search/repositories';
 	const filters = 'org:takenet+language:c%23+is:public+fork:true';
