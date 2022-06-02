@@ -11,7 +11,7 @@ app.get('/repositories', async (req, res) => {
 	const order = 'asc';
 	const accept = 'application/vnd.github.v3+json';
 
-	let filler = {};
+	let filler = [];
 	let selectedRepositories = {};
 
 	let response = await fetch(`${url}?q=${filters}&sort=${sort}&order=${order}&accept=${accept}`);
