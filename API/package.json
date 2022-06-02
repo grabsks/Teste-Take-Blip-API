@@ -2,6 +2,7 @@
   "name": "teste-take-blip-api",
   "version": "1.0.0",
   "description": "",
+	"type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/grabsks/Teste-Take-Blip-API/issues"
   },
-  "homepage": "https://github.com/grabsks/Teste-Take-Blip-API#readme"
+  "homepage": "https://github.com/grabsks/Teste-Take-Blip-API#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "node-fetch": "^3.2.5",
+    "nodemon": "^2.0.16"
+  }
 }
